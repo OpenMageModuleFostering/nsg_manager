@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="1.0.4">
+
+    <default>
+        <reference name="before_body_end">
+        	<block type="buysafe/seals" name="buysafe.seal.corner" template="buysafe/cornerseal.phtml" />
+        </reference>
+    </default>
+    
+    <checkout_onepage_success>
+    	<reference name="before_body_end">
+        	<block type="buysafe/seals" name="buysafe.seal.guarantee" template="buysafe/guarantee.phtml" after="-"/>
+        </reference>
+    </checkout_onepage_success>
+    
+</layout>
