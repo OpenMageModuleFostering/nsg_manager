@@ -44,7 +44,7 @@ class Buysafe_Siteseals_Helper_Data
      */
     public function getHash()
     {
-        if ( ($hash = Mage::getStoreConfig('buysafe_options/buysafe_config/buysafe_hash')) ) {
+        if ( ($hash = Mage::helper('core')->decrypt(Mage::getStoreConfig('buysafe_options/buysafe_config/buysafe_hash')))){
             return $hash;
         }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>NSG_manager</name>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <stability>stable</stability>
     <license uri="http://Symantec.com">Symantec</license>
     <channel>community</channel>
@@ -14,12 +14,12 @@ The added confidence and value merchants provide buyers with Guaranteed Shopping
 &#xD;
 We guarantee for every dollar you invest in Norton Shopping Guarantee you will get a minimum of $20 in incremental top line revenue. We will prove the 20x ROI during the free trial using best practices a/b testing methodology. Using the Norton Shopping Guarantee program can make ecommerce businesses much more successful.&#xD;
 </description>
-    <notes>Versions 1.0.6 - Norton Shopping Guarantee initial release with Re-formatted code for PSR-1/2 standards and Improved security. Norton Shopping Guarantee is a tool that delivers free protection for shoppers&#x2014;and smart marketing for retailers. Add it to your website today to increase online conversion (+7%*), repeat buyers (+5%*) and overall customer satisfaction. It&#x2019;s guaranteed to deliver 20X ROI!&#xD;
+    <notes>Versions 1.0.7 - Norton Shopping Guarantee initial release with Re-formatted code for PSR-1/2 standards and Improved security. Norton Shopping Guarantee is a tool that delivers free protection for shoppers&#x2014;and smart marketing for retailers. Add it to your website today to increase online conversion (+7%*), repeat buyers (+5%*) and overall customer satisfaction. It&#x2019;s guaranteed to deliver 20X ROI!&#xD;
 Install now and call 1-855-822-2827 to complete account activation.</notes>
     <authors><author><name>Symantec Corporation</name><user>Symantec</user><email>victor_thornton@symantec.com</email></author></authors>
-    <date>2015-10-07</date>
-    <time>23:21:01</time>
-    <contents><target name="magecommunity"><dir name="Buysafe"><dir name="Siteseals"><dir name="Block"><file name="Image.php" hash="a19d64b85bedf25560329730b34bea87"/><file name="Seals.php" hash="f80347b5bcf9915691a54a50a8e2f08a"/></dir><dir name="Helper"><file name="Data.php" hash="98cf9531a84d1bc320b40575fa2381f0"/></dir><dir name="etc"><file name="adminhtml.xml" hash="55ef9fb069085d003c1e9a105f695dfc"/><file name="config.xml" hash="8d5ca5ce90e6b599136d3b26f58dfd07"/><file name="system.xml" hash="98073ea37ada3dcb893a0a4efa5f7f16"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="buysafe.xml" hash="c58a929993070370cf00640b54e7bb72"/></dir><dir name="template"><dir name="buysafe"><file name="cornerseal.phtml" hash="84be34dd8516b31c32b1a98f666cebcc"/><file name="guarantee.phtml" hash="8e5a2df54306094e8e026133b7ed9e13"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Buysafe_Siteseals.xml" hash="da8e3c929c9f57e5be9672bd60f31451"/></dir></target></contents>
+    <date>2015-10-29</date>
+    <time>19:52:26</time>
+    <contents><target name="magecommunity"><dir name="Buysafe"><dir name="Siteseals"><dir name="Block"><file name="Image.php" hash="a19d64b85bedf25560329730b34bea87"/><file name="Seals.php" hash="f80347b5bcf9915691a54a50a8e2f08a"/></dir><dir name="Helper"><file name="Data.php" hash="0c5e4d499cc91a41b046321e1ca28c1a"/></dir><dir name="etc"><file name="adminhtml.xml" hash="55ef9fb069085d003c1e9a105f695dfc"/><file name="config.xml" hash="8d5ca5ce90e6b599136d3b26f58dfd07"/><file name="system.xml" hash="98073ea37ada3dcb893a0a4efa5f7f16"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="buysafe.xml" hash="c58a929993070370cf00640b54e7bb72"/></dir><dir name="template"><dir name="buysafe"><file name="cornerseal.phtml" hash="84be34dd8516b31c32b1a98f666cebcc"/><file name="guarantee.phtml" hash="8e5a2df54306094e8e026133b7ed9e13"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Buysafe_Siteseals.xml" hash="da8e3c929c9f57e5be9672bd60f31451"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>5.6.12</max></php></required></dependencies>
 </package>
