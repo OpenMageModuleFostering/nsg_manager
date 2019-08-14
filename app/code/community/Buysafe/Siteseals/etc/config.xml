@@ -1,4 +1,18 @@
 <?xml version="1.0"?>
+<!--
+
+/**
+ * Module configuration.
+ * 
+ * PHP Version 5
+ * 
+ * @category  Configuration
+ * @package   Buysafe_Siteseals
+ * @author    Symantec Corporation
+ * @copyright 2015 Symantec Corporation, All Rights Reserved.
+ */
+
+-->
 <config>    
     <modules>
         <Buysafe_Siteseals>

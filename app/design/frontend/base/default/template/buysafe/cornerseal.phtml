@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Corner seal template.
+ * 
+ * PHP Version 5
+ * 
+ * @category  Template
+ * @package   Buysafe_Siteseals
+ * @author    Symantec Corporation
+ * @copyright 2015 Symantec Corporation, All Rights Reserved.
+ */
+
+?>
+<?php /* @var $this Buysafe_Siteseals_Block_Seals */ ?>
+<?php if ($this->isEnabled()) : ?>
+<!-- BEGIN: _GUARANTEE Seal -->
+<span id="_GUARANTEE_SealSpan"></span>
+<?php if ($this->hasStoreNumber()) : ?>
+<script type="text/javascript" src="//nsg.symantec.com/Web/Seal/gjs.aspx?sn=<?php echo $this->getStoreNumber(); ?>"></script>
+<?php else : ?>
+<script type="text/javascript" src="//nsg.symantec.com/Web/Seal/gjs.aspx?sn="></script>
+<?php endif;  ?>
+<script type="text/javascript">
+    if (window._GUARANTEE && _GUARANTEE.Loaded) {
+        _GUARANTEE.Hash = '<?php echo $this->getHash(); ?>';
+        _GUARANTEE.WriteSeal("_GUARANTEE_SealSpan", "GuaranteedSeal");
+    }
+</script>
+<!-- END: _GUARANTEE Seal -->
+<?php endif; ?>

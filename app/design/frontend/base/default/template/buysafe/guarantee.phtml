@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * Checkout guarantee seal template.
+ * 
+ * PHP Version 5
+ * 
+ * @category  Template
+ * @package   Buysafe_Siteseals
+ * @author    Symantec Corporation
+ * @copyright 2015 Symantec Corporation, All Rights Reserved.
+ */
+
+?>
+<?php /* @var $this Buysafe_Siteseals_Block_Seals */ ?>
+<?php if ($this->isEnabled()) : ?>
+<?php $_order = $this->getOrder(); ?>
+<!-- BEGIN: NSG_GUARANTEE -->
+<span id="_GUARANTEE_GuaranteeSpan"></span>
+<script type="text/javascript" src="//nsg.symantec.com/Web/Seal/gjs.aspx?sn=<?php echo $this->getStoreNumber(); ?>"></script>
+<script type="text/javascript">
+    if (window._GUARANTEE && _GUARANTEE.Loaded) {
+        _GUARANTEE.Hash                 = '<?php echo $this->getHash(); ?>';
+        _GUARANTEE.Guarantee.order      = '<?php echo $_order->getIncrementId(); ?>';
+        _GUARANTEE.Guarantee.subtotal   = '<?php echo round($_order->getBaseSubtotal(), 2); ?>';
+        _GUARANTEE.Guarantee.email      = '<?php echo $_order->getCustomerEmail() ?>';
+
+        _GUARANTEE.WriteGuarantee("JavaScript", "_GUARANTEE_GuaranteeSpan");
+    }
+</script>
+<!-- END: NSG_GUARANTEE -->
+<?php endif; ?>
